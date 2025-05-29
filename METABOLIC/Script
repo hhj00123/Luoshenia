@@ -1,0 +1,1 @@
+perl /ME4012-Vol01/dell/METABOLIC_running_folder/METABOLIC/METABOLIC-C.pl -t 40 -m-cutoff 0.75 -in /data/sxw/data/New_folder/L_tenuis/prokka/faa -kofam-db full -o /data/sxw/data/New_folder/L_tenuis/0.75cutoff_Metabolic_results
