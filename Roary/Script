@@ -1,0 +1,1 @@
+roary -e --mafft -i 90 -s -p 48 *.gff -f /data/sunxw/data/12.10allchris/gff/roary
