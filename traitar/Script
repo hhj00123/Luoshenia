@@ -1,0 +1,2 @@
+##
+traitar phenotype /home/dell/ /data/huanghj/A_analzy/20250217luoshenia/fa/ sample.txt from_nucleotides /data/huanghj/A_analzy/20250217luoshenia/traitar_3.0.1/ -c 24  --overwrite
