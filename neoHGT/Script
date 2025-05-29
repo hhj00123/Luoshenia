@@ -1,0 +1,7 @@
+cd /your .faa path/
+for i in *.faa;do diamond blastp --query /ME4012-Vol01/sxw/analzy/20240712m11/faa/${i} --db /ME4012-Vol01/database/hgtector/diamond/db.dmnd --outfmt 6 qseqid sseqid pident evalue bitscore qcovhsp staxids > /ME4012-Vol01/sxw/analzy/20240712m11/faa/$i.result.txt; done
+
+for i in *.faa;do neoHGT search -i /ME4012-Vol01/sxw/analzy/20240712m11/faa/${i} -m precomp -s /ME4012-Vol01/sxw/analzy/20240712m11/faa/${i}.result.txt -t /ME4012-Vol01/database/hgtector/download/11 -o /ME4012-Vol01/sxw/analzy/20240712m11/faa --maxseqs 200 --evalue 1e-20 --identity 50 --coverage 50; done
+
+for i in *.tsv;do neoHGT analyze -i ${i} -o /ME4012-Vol01/sxw/analzy/20240712m11/20240901/${i}.file -t /ME4012-Vol01/database/hgtector/download/11 --maxhits 100 --evalue 1e-50 --identity 70 --coverage 70 --self-tax 2944144 --close-tax 990719 --donor-name --donor-rank species; done
+
